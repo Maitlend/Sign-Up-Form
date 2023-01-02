@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  margin: 0 10rem;
+  background-color: black;
+}
+
+#logo-column {
+  background-image: url(images/vegetation.jpg);
+  color: white;
+  width: 35vw;
+  background-size: 40vw;
+}
+
+#form-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #F9FAFB;
+}
+
+#form {
+  background-color: white;
+}
+
+button {
+  display: block;
+}
