@@ -9,21 +9,49 @@
   <script src="script.js"></script>
 </head>
 <body>
-  <div id="logo-column">
-    <p>ODIN</p>
+  <div id="logo-column"> 
+    <div id="logo-section">
+      <img src="images/odin-lined.png" id="odin-image"/>
+      <p>ODIN</p>
+    </div>
+    
   </div>
   <div id="form-column">
     <div id="pitch">
       <p>This is not a real online service! You know you need something like this in your 
-        life to help you realize your deepest dreams. Sign up now to get started.</p>
-      <p>You know you want to.</p>
+        life to help you realize your deepest dreams. Sign up <em> now </em> to get started.</p>
+      <p>You <em>know</em> you want to.</p>
     </div>
     <div id="form">
       <p>Let's do this!</p> 
       <form id="form1">
+        <label for="first-name" class="form-field">
+          <span>FIRST NAME</span>
+          <input type="text" id="first-name" name="first-name"/>
+        </label>
+        <label for="last-name" class="form-field">
+          <span>LAST NAME</span>
+          <input type="text" id="last-name" name="last-name"/>
+        </label>
+        <label for="mail" class="form-field">
+          <span>EMAIL</span>
+          <input type="email" id="mail" name="last-name" required/>
+        </label>
+        <label for="phone" class="form-field">
+          <span>PHONE NUMBER</span>
+          <input type="tel" id="phone" name="phone"/>
+        </label>
+        <label for="password" class="form-field">
+          <span>PASSWORD</span>
+          <input type="password" id="pass" name="pass" required minlength="8"/>
+        </label>
+        <label for="password-confirm" class="form-field">
+          <span>CONFIRM PASSWORD</span>
+          <input type="password" id="pass-conf" name="pass-conf" required minlength="8"/>
+        </label>
       </form>
     </div>
-    <div>
+    <div id="submit-section">
       <button type="submit" form="form1">Create Account</button>
       <p>Already have an account?</p>
       <a href="google.com">Log in</a>
